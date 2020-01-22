@@ -19,7 +19,7 @@ class CarsController extends Controller
      */
     public function index()
     {
-        $customers = DB::select('select * from customers');
+        $customers = DB::select('select * from customers where = ?',[1]);
         //
         return View::make('customers',['customers' => $customers]);
     }
