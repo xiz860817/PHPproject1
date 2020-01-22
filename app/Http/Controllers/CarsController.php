@@ -1,8 +1,8 @@
 <?php
-namespace app\Http\Controllers;
+namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use app\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Route;
 use View;
 class CarsController extends Controller{
