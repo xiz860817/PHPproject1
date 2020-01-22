@@ -26,4 +26,4 @@ Route::get('users/{name?}', function ($name = 'Peter'){
   });
 
   //增加下列一行
-//Route::resource('cars','CarsController');
+Route::resource('cars','CarsController');
