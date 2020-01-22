@@ -1,5 +1,5 @@
 <?php
-
+use Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +20,7 @@ Route::get('/', function () {
 });
 
 Route::resource('customer', 'customerController');
+
+Route::get('users/{name?}', function ($name = 'Peter'){
+    return 'Hello ,'.$name;
+  });
