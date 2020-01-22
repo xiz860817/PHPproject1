@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace app\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\Controller;
+use app\Http\Controllers\Controller;
 use Route;
 use View;
 
-class customerController extends Controller
+class CarsController extends Controller
 {
     /**
      * Display a listing of the resource.
