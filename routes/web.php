@@ -24,3 +24,6 @@ Route::resource('customer', 'CustomerController');
 Route::get('users/{name?}', function ($name = 'Peter'){
     return 'Hello ,'.$name;
   });
+
+  //增加下列一行
+Route::resource('cars','CarsController');
