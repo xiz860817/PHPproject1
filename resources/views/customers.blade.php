@@ -15,16 +15,17 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              
               <?php
                 foreach ($customers as $user){
-                  echo "<td>".$user->id."</td>";
-                  echo "<td>".$user->name."</td>";
-                  echo "<td>".$user->Phone."</td>";
-                  echo "<br>";
+                    echo "<tr>";
+                    echo "<td>".$user->id."</td>";
+                    echo "<td>".$user->name."</td>";
+                    echo "<td>".$user->Phone."</td>";
+                    echo "</tr>>";
                 }
                 ?>                  
-              </tr>
+              
             </tbody>
           </table>
         </div>  
