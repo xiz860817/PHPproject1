@@ -22,7 +22,7 @@
                     echo "<td>".$user->id."</td>";
                     echo "<td>".$user->name."</td>";
                     echo "<td>".$user->Phone."</td>";
-                    echo "</tr>>";
+                    echo "</tr>";
                 }
                 ?>                  
               
