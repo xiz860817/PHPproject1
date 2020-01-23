@@ -16,13 +16,9 @@
             </thead>
             <tbody>
               <tr>
-                <?php
-                  foreach ($customers as $user){
-                      echo "<td>".$user->id."</td>";
-                      echo "<td>".$user->name."</td>";
-                      echo "<td>".$user->phone."</td>";
-                  }
-                ?>
+                <td>A001</td>
+                <td>王小明</td>
+                <td>0912345678</td>
               </tr>
             </tbody>
           </table>
