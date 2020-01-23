@@ -20,7 +20,8 @@
                 foreach ($customers as $user){
                   echo "<td>".$user->id."</td>";
                   echo "<td>".$user->name."</td>";
-                  echo "<td>".$user->Phone."</td></br>";
+                  echo "<td>".$user->Phone."</td>";
+                  echo "<br>";
                 }
                 ?>                  
               </tr>
