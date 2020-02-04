@@ -4,9 +4,8 @@ namespace App\Http\Controllers;
 
 use View;
 use Route;
-use App\Product;
 use Illuminate\Http\Request;
-
+use App\Customer;
 class customerController extends Controller
 {
     /**
