@@ -17,14 +17,15 @@
             <tbody>
               
               <?php
-                foreach ($customers as $customer){
-              ?>
-            <tr>
-              <td><?php echo $customer->Cusid; ?></td>
-              <td><?php echo $customer->Name; ?></td>
-              <td><?php echo $customer->Phone; ?></td>
-            </tr>
-              <?php }  ?>               
+                foreach ($customers as $user){
+                    echo "<tr>";
+                    echo "<td>".$user->id."</td>";
+                    echo "<td>".$user->name."</td>";
+                    echo "<td>".$user->Phone."</td>";
+                    echo "</tr>";
+                }
+                ?>                  
+              
             </tbody>
           </table>
         </div>  
