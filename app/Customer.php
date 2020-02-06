@@ -4,6 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+$post = App\Customer::create([
+        'Name' => 'Merry',
+        'Address' => 'Test Load No.12',
+        'Phone' => '0912345678'
+    ]);
+    // 可用下列方法，節省輸入的時間
+    $post = App\Customer::create($request->all());
 class Customer extends Model
 {
     //
@@ -11,11 +18,5 @@ class Customer extends Model
     protected $primarykey = 'id';
     public $timestamps = true;
     // 從 View 送過來的　$request 內容會是陣列，看起來如下：
-    $post = App\Customer::create([
-        'Name' => 'Merry',
-        'Address' => 'Test Load No.12',
-        'Phone' => '0912345678'
-    ]);
-    // 可用下列方法，節省輸入的時間
-    $post = App\Customer::create($request->all());
+    
 }
