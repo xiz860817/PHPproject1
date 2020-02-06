@@ -15,7 +15,7 @@ class CreateCarstylesTable extends Migration
     {
         Schema::create('carstyles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->int('CarStyleid',11)->unique()->index()->autoIncrement();
+            $table->integer('CarStyleid',11)->unique()->index()->autoIncrement();
             $table->char('CarName',50)->index();
             $table->char('CarClass',50)->index();
             $table->char('CarOilSize',50)->index();
