@@ -27,3 +27,9 @@ Route::get('users/{name?}', function ($name = 'Peter'){
 
   //增加下列一行
 Route::resource('cars','CarsController');
+
+Route::middleware(['member'])->group(function () {
+    Route::get('member_center', function () {
+      // 經過member middleware驗證後才能進入
+    });
+  });
