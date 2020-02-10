@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+//加入 EditCustomer
+use App\Http\Request\EditCustomer;
 use View;
 use Route;
 use Illuminate\Http\Request;
@@ -70,8 +72,16 @@ class customerController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update( $Cusid, EditCustomer $request)
     {
+        $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
+        $customer->Phone = $request->Phone;
+        $customer->save();
+
+        return View::make('edit',[
+            'customer' => $customer,
+            'msg' => '修改成功'
+         ]);
         //
     }
 

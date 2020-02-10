@@ -28,8 +28,13 @@ Route::get('users/{name?}', function ($name = 'Peter'){
   //增加下列一行
 Route::resource('cars','CarsController');
 
+<<<<<<< HEAD
 Route::middleware(['member'])->group(function () {
     Route::get('member_center', function () {
       // 經過member middleware驗證後才能進入
     });
   });
+=======
+Route::get('edit/{Cusid}','CustomerController@edit');
+Route::post('edit/{Cusid}', 'CustomerController@update');
+>>>>>>> ef0eacbd63f808aacfdb8fe9a95bcd18f587d268
