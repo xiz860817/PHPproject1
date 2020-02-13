@@ -18,7 +18,7 @@ class customerController extends Controller
     public function index()
     {
         //
-        $customers = Customer::update();
+        $customers = Customer::all();
         
         return View::make('board',['customers' => $customers]);
     }

@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('hello');
 });
 
-Route::resource('customer', 'CustomerController');
+Route::resource('customer', 'CustomerController@index');
 
 Route::get('users/{name?}', function ($name = 'Peter'){
     return 'Hello ,'.$name;
