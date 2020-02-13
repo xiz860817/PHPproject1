@@ -13,11 +13,6 @@ class Customer extends Model
     public $timestamps = true;
     
     // 從 View 送過來的　$request 內容會是陣列，看起來如下：
-    public function update(){
-        //從controller呼叫
-        $customers = new App\Customer;
-        $customers->Name = 'Peter';
-        $customers->save();
-    }
+    $customers=DB::insert('insert into customers (Name,Address) values (?, ?)', ['James', 'test rolad 1']);
     
 }
