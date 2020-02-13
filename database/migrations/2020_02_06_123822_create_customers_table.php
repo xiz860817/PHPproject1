@@ -21,17 +21,10 @@ class CreateCustomersTable extends Migration
             $table->char('Phone',10)->index();
             $table->timestamps();
         });
+        
+        
     }
-    public function update()
-    {
-        $post = App\Customer::create([
-            'Name' => 'Merry',
-            'Address' => 'Test Load No.12',
-            'Phone' => '0912345678'
-        ]);
-        // 可用下列方法，節省輸入的時間
-        $post = App\Customer::create($request->all());
-    }
+    
     /**
      * Reverse the migrations.
      *

@@ -18,7 +18,8 @@ class customerController extends Controller
     public function index()
     {
         //
-        $customers = Customer::all();
+        $customers = Customer::update();
+        
         return View::make('board',['customers' => $customers]);
     }
 
@@ -30,6 +31,7 @@ class customerController extends Controller
     public function create()
     {
         //
+        
     }
 
     /**
@@ -74,7 +76,8 @@ class customerController extends Controller
      */
     public function update( $Cusid, EditCustomer $request)
     {
-        $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
+        #$first = DB::update('update users set votes = 100 where name = ?', ['Peter']);
+        /*$customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
         $customer->Phone = $request->Phone;
         $customer->save();
 
@@ -82,6 +85,7 @@ class customerController extends Controller
             'customer' => $customer,
             'msg' => '修改成功'
          ]);
+         */
         //
     }
 
