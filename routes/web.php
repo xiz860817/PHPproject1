@@ -30,3 +30,10 @@ Route::resource('cars','CarsController');
 
 Route::get('edit/{Cusid}','CustomerController@edit');
 Route::post('edit/{Cusid}', 'CustomerController@update');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
