@@ -64,7 +64,7 @@ class customerController extends Controller
     public function edit(Customer $customers)
     {
         //
-        return view('welcome');
+        
         return View::make('edit',['Cusid'=>$cusid]);
     }
 
