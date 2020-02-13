@@ -19,7 +19,6 @@ class customerController extends Controller
     {
         //
         $customers = Customer::all();
-        $customer=DB::insert('insert into customers (Name,Address) values (?, ?)', ['James', 'test rolad 1']);
         return View::make('board',['customers' => $customers]);
     }
 
@@ -62,7 +61,7 @@ class customerController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit(Product $customers)
     {
         //
     }
