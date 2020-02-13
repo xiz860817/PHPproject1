@@ -19,8 +19,8 @@ class customerController extends Controller
     {
         //
         $customers = Customer::all();
-        
-        return $customers->Cusid;
+        return View::make('board',['customers' => $customers]);
+        #return $customers->['Cusid'];
         #return View::make('board',['customers' => $customers]);
     }
 
