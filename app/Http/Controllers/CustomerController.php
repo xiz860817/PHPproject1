@@ -65,7 +65,7 @@ class customerController extends Controller
     {
         //
         
-        return View::make('edit',['Cusid'=>$cusid]);
+        return View::make('edit',['Cusid'=>$Cusid]);
     }
 
     /**
