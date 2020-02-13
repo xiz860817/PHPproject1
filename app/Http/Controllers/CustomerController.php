@@ -61,7 +61,7 @@ class customerController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Customer $customers)
+    public function edit(Customer $Cusid)
     {
         //
         
