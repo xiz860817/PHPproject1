@@ -20,7 +20,9 @@ class customerController extends Controller
         //
 
         $test = Test::all();
-        
+        $post = new Test;
+        $post->new();
+
         return View::make('board',['test' => $test]);
 
 
