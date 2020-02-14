@@ -18,9 +18,11 @@ class customerController extends Controller
     public function index()
     {
         //
+
         $test = Test::all();
         
         return View::make('board',['test' => $test]);
+
 
     }
 
