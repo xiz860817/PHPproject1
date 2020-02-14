@@ -7,7 +7,7 @@ use App\Http\Request\EditCustomer;
 use View;
 use Route;
 use Illuminate\Http\Request;
-use App\Customer;
+use App\Test;
 class customerController extends Controller
 {
     /**
@@ -18,9 +18,9 @@ class customerController extends Controller
     public function index()
     {
         //
-        $customers = Customer::all();
+        $test = Test::all();
         
-        return View::make('board',['customers' => $customers]);
+        return View::make('board',['test' => $test]);
 
     }
 

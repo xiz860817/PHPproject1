@@ -11,17 +11,17 @@
             <tr>
               <th>客戶編號</th>
               <th>客戶姓名</th>
-              <th>客戶電話</th>
+              
             </tr>
           </thead>
           <tbody>
           <?php
-            foreach ($customers as $customer){
+            foreach ($test as $t){
           ?>
             <tr>
-	              <td><?php echo $customer->Cusid; ?></td>
-	              <td><?php echo $customer->Name; ?></td>
-              <td><?php echo $customer->Phone; ?></td>
+	              <td><?php echo $t->Cus; ?></td>
+	              <td><?php echo $t->Name; ?></td>
+              
             </tr>
             <?php }  ?>
           </tbody>
