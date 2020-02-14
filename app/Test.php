@@ -11,6 +11,7 @@ class Test extends Model
     public $timestamps = False;
 
     public function new(){
-        $this->Name= 'A'; 
+        $this->Name= 'A';
+        $this->save(); 
     }
 }
