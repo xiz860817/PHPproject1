@@ -19,7 +19,12 @@ class customerController extends Controller
     {
         //
         $customers = Customer::all();
-        
+        /*$data = new Customer();
+	$data->Cusid = 'A';
+	$data->Name = 'peter';
+	$data->Address = 'load.10';
+	$data->Phone = '0987654321';
+	$data->save();*/
         return View::make('board',['customers' => $customers]);
 
     }
