@@ -18,9 +18,19 @@ class customerController extends Controller
     public function index()
     {
         //
+<<<<<<< HEAD
         $customers = Customer::all();
         
         return View::make('board',['customers' => $customers]);
+=======
+        $customers =Customer::all();
+	
+	
+	#$customers = Customer::all();
+        #return View::make('board',['customers' => $customers]);
+        return $customers;
+        #return View::make('board',['customers' => $customers]);
+>>>>>>> 06f97bafe8895c687f9fe1594bf9edfcf236996b
     }
 
     /**
@@ -62,9 +72,11 @@ class customerController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit(Customer $Cusid)
     {
         //
+        
+        return View::make('edit',['Cusid'=>$Cusid]);
     }
 
     /**
@@ -76,8 +88,8 @@ class customerController extends Controller
      */
     public function update( $Cusid, EditCustomer $request)
     {
-        #$first = DB::update('update users set votes = 100 where name = ?', ['Peter']);
-        /*$customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
+        
+        $customer = CustomerEloquent::where('Cusid', $Cusid)->firstOrFail();
         $customer->Phone = $request->Phone;
         $customer->save();
 
@@ -85,8 +97,8 @@ class customerController extends Controller
             'customer' => $customer,
             'msg' => '修改成功'
          ]);
-         */
-        //
+        
+        
     }
 
     /**
